@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Healthcare India</title>
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); 
+            document.getElementById('confirmation-message').style.display = 'block'; 
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Smart Healthcare India</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Consulting">Consulting AI</a></li>
+                <li><a href="#appointment">Book Appointment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <link rel="stylesheet" href="health.css">
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Smart Healthcare India</h2>
+        <p>Providing innovative and affordable healthcare solutions across India.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Online Consultation</h3>
+            <p>Get medical advice from top doctors online.</p>
+        </div>
+        <div class="service">
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency medical support.</p>
+        </div>
+        <div class="service">
+            <h3>AI-based Diagnosis</h3>
+            <p>Smart AI to predict diseases at an early stage.</p>
+        </div>
+    </section>
+
+    <section id="Consulting">   
+        <h2>Consulting AI</h2>
+        <p>Type Your Symptoms and get AI consulting now</p>
+        <iframe
+    src="https://www.chatbase.co/chatbot-iframe/r8utEg61GjDc01r9qc64V"
+    width=500px
+    style= "min-height: 700px"
+    frameborder="1"></iframe>
+>
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+        
+        <form onsubmit="handleFormSubmit(event)">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="city">Nearby city:</label><br><br>
+            Select your city:     
+            <select name="city" id="city" required>
+                <option value="Siwan">Siwan</option>
+                <option value="Kotdwar">Kotdwar</option>
+                <option value="Vanarsi">Vanarsi</option>
+                <option value="Greater Noida">Greater Noida</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangluru">Bangluru</option>
+                <option value="Pune">Pune</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Prayagraj">Prayagraj</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Gorakhpur">Gorakhpur</option>
+                <option value="Patna">Patna</option>
+                <option value="Dehradun">Dehradun</option>
+            </select>
+            <br><br>
+
+            <label for="message">Health Concern:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        
+        <div id="confirmation-message" style="display:none; color: green; font-weight: bold;">
+            <p>Appointment has been Booked!</p>
+            <p>Get well soon.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: priyanshu.nsh7@gmail.com</p>
+        <p>Phone: +91 9334206375</p>
+        <p>Address: Delhi, India</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Smart Healthcare India. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
